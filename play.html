@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<meta charset="utf-8">
+<title>Bethany Moy</title>
+<meta name="description" content="Bethany Moy is a multidisciplinary designer based in Toronto.">
+<meta name="author" content="Bethany Moy">
+<meta name="keywords" content="bethany beth moy bethanymoy bethmoy designer design">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Stylesheets -->
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="MyFontsWebfontsKit.css">
+<!-- Main -->
+<link rel="stylesheet" href="css/style.css">
+    
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/favicon.png">
+
+<style>
+    .start-from-0 {
+    margin-top: -200px;
+    }
+    
+    .animate {
+    margin-top: 0;
+    transition: all 1.2s ease-in-out;
+    }
+</style>    
+</head>
+    
+<body>
+
+<div id="play" class="container-fluid">
+
+<!-- Navigation -->
+<a id="home" href="index.html">Bethany Moy</a>
+    
+<nav>
+
+<!-- Mobile Nav -->
+<div id="hamburger">
+<div class="mobile-nav">
+<ul>
+    <li><a href="index.html">Work</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a class="active" href="play.html">Play</a></li>
+</ul>
+</div>
+</div>
+<a href="javascript:void(0)" class="icon">
+    <div class="hamburger">
+        <div class="menui top-menu"></div>
+        <div class="menui mid-menu"></div>
+        <div class="menui bottom-menu"></div>
+    </div>
+</a>
+</nav> 
+    
+<!-- Opening -->
+<div class="hi-there row">
+    <article class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-5">
+        <h1>Under Construction</h1>
+        <p>I know how much you want to see my side projects and the other cool sh*t that I just do, but it will have to wait cause I've literally gone through coding hell and back. Meanwhile, feel free to check out my antics elsewhere.</p>
+    </article>
+</div>
+    
+</div>
+
+    
+<!-- JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<script>
+$(document).ready(function () {
+    $(".icon").click(function () {
+        $("#hamburger").fadeToggle(500);
+        $(".top-menu").toggleClass("top-animate");
+        $(".mid-menu").toggleClass("mid-animate");
+        $(".bottom-menu").toggleClass("bottom-animate");
+    });
+});
+</script>
+
+    
+</body>

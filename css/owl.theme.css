@@ -1,0 +1,97 @@
+/*
+* 	Owl Carousel Owl Demo Theme 
+*	v1.3.3
+*/
+
+.owl-theme .owl-controls{
+	margin-top: 0px;
+	text-align: center;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+	display: inline-block;
+	zoom: 1;
+	*display: inline;/*IE7 life-saver */
+}
+
+.owl-theme .owl-controls .owl-page span{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 0px 5px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+	background-color: #d8d8d8;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+	background-color: #FF0000;
+}
+
+/* Customized */
+.final .owl-controls {
+    position: absolute;
+    width: 100%;
+    padding: 0 3%;
+    top: 25%;
+}
+
+.owl-prev, .owl-next {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    color: rgba(0, 0, 0, 0);
+    opacity: 0.5;
+}
+
+.owl-prev {
+    float: left;
+    background-image: url(../img/prev.svg);
+}
+
+.owl-next {
+    float: right;
+    background-image: url(../img/next.svg);
+}
+
+.controlled .owl-controls {
+    position: relative;
+    top: -12px;
+    padding: 0 15%;
+}
+
+.controlled .why .owl-controls {
+   top: 30px; 
+}
+
+.controlled .send-help .owl-controls {
+    top: 10px;
+}
+
+@media (min-width: 768px) {  
+    .controlled .send-help .owl-controls {
+    position: absolute;
+    top: 250px;
+    padding: 0 10%;
+    }
+    
+    .controlled .send-help .owl-next {
+    position: relative;
+    left: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    .owl-prev, .owl-next {
+    width: 50px;
+    }
+    
+    .controlled .send-help .owl-controls {
+    top: 200px;
+    padding: 0 17.5%;
+    }
+}

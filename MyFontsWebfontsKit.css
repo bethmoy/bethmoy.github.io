@@ -1,0 +1,42 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3348948, 2017-02-23T00:23:33-0500
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: FreightBigProBold-Italic by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-big-pro/bold-italic/
+ * Copyright: Copyright &#x00A9; 2005-2009, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * Webfont: FreightBigProBook-Italic by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-big-pro/book-italic/
+ * Copyright: Copyright &#x00A9; 2005-2009, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * Webfont: FreightSansProBook-Regular by GarageFonts
+ * URL: http://www.myfonts.com/fonts/garagefonts/freight-sans-pro/book/
+ * Copyright: Copyright &#x00A9; 2004-2010, Joshua Darden &amp; Phil's Fonts, Inc. All rights reserved. Published by Garagefonts USA 301-879-9222 www.garagefonts.com
+ * 
+ * 
+ * License: http://www.myfonts.com/viewlicense?type=web&buildid=3348948
+ * Licensed pageviews: 10,000
+ * 
+ * © 2017 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/3319d4");
+
+  
+@font-face {font-family: 'FreightBigProBold-Italic';src: url('webfonts/3319D4_0_0.eot');src: url('webfonts/3319D4_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3319D4_0_0.woff2') format('woff2'),url('webfonts/3319D4_0_0.woff') format('woff'),url('webfonts/3319D4_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FreightBigProBook-Italic';src: url('webfonts/3319D4_1_0.eot');src: url('webfonts/3319D4_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3319D4_1_0.woff2') format('woff2'),url('webfonts/3319D4_1_0.woff') format('woff'),url('webfonts/3319D4_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'FreightSansProBook-Regular';src: url('webfonts/3319D4_2_0.eot');src: url('webfonts/3319D4_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/3319D4_2_0.woff2') format('woff2'),url('webfonts/3319D4_2_0.woff') format('woff'),url('webfonts/3319D4_2_0.ttf') format('truetype');}
+ 
