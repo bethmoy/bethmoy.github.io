@@ -50,8 +50,8 @@ h7 {
 }
 
 p, li {
-    font-size: 14px;
-    line-height: 19px;
+    font-size: 15px;
+    line-height: 20px;
 }
 
 li {
@@ -530,22 +530,30 @@ section.final {
 }
 
 .wireframe-1 {
-    background-image: url(../img/tempr-high-frame-1.jpg);
+    background-image: url(../img/tempr-sketch-1.jpg);
 }
 
 .wireframe-2 {
-    background-image: url(../img/tempr-high-frame-1.jpg);
+    background-image: url(../img/tempr-sketch-2.jpg);
 }
 
 .wireframe-3 {
-    background-image: url(../img/tempr-high-frame-2.jpg);
+    background-image: url(../img/tempr-sketch-3.jpg);
 }
 
 .wireframe-4 {
+    background-image: url(../img/tempr-sketch-4.jpg);
+}
+
+.wireframe-5 {
+    background-image: url(../img/tempr-high-frame-1.jpg);
+}
+
+.wireframe-6 {
     background-image: url(../img/tempr-high-frame-2.jpg);
 }
 
-.fridgeframe-1, .fridgeframe-2 {
+.fridgeframe-1, .fridgeframe-2, .fridgeframe-3, .fridgeframe-4  {
     background-size: 90%;
 }
 
@@ -555,6 +563,14 @@ section.final {
 
 .fridgeframe-2 {
     background-image: url(../img/fridge-frame-2.png);
+}
+
+.fridgeframe-3 {
+    background-image: url(../img/fridge-frame-3.png);
+}
+
+.fridgeframe-4 {
+    background-image: url(../img/fridge-frame-4.png);
 }
 
 .user-scenario article {
