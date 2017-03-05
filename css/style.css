@@ -26,6 +26,7 @@ h1, h3, h4 {
 h2 {
     font-family: "FreightBigProBold-Italic", serif;
     font-size: 150px;
+    font-size: 150px;
 }
 
 h3 {
@@ -388,6 +389,22 @@ header article {
     background-image: url(../img/tempr-feature.jpg);
 }
 
+#hard-candy .feature-img {
+    background-image: url(../img/hard-feature.jpg);
+}
+
+#hard-candy .final article {
+    padding: 150px 0 60px 0;
+}
+
+#hard-candy .final .censorship {
+    padding-top: 0px;
+}
+
+.cover {
+    padding: 3% 0 5% 0;
+}
+
 /* Scroll-Down Arrow */
 .scroll-down {
     text-align: center;
@@ -397,6 +414,10 @@ img.scroll-arrow {
     position: absolute;
     bottom: 38px;
     right: 50%;
+}
+
+.process .spaceplz {
+    padding: 0 0 6% 0;
 }
 
 
@@ -711,6 +732,15 @@ section.final {
     background-size: 113%;
 }
 
+.hard-thumbnail {
+    background-image: url(../img/hard-thumbnail.png);
+    background-size: 120%;
+}
+
+.hard-thumbnail:hover {
+    background-size: 150%;
+}
+
 .humanizing-thumbnail:hover {
     background-size: 140%;
 }
@@ -883,6 +913,10 @@ svg line {
     color: #9B2BFF;
 }
 
+#humanizing-prison-architecture svg line, #section0 svg line{
+    stroke: #FF0000;
+}
+
 #about svg line {
     stroke: #0020FF;
 }
@@ -895,7 +929,7 @@ svg line {
     color: #00E8BD;
 }
 
-#hard-candy h6, #hard-candy h7, #hard-candy span, #hard-candy .active, #hard-candy .next-project a, #hard-candy .last-project a, #hard-candy .connect, #section3 .connect, #section3 h2 {
+#hard-candy h2, #hard-candy h6, #hard-candy h7, #hard-candy span, #hard-candy .active, #hard-candy .next-project a, #hard-candy .last-project a, #hard-candy .connect, #section3 .connect, #section3 h2 {
     color: #FD0083;
 }
 
@@ -1329,6 +1363,10 @@ svg line {
 
     .column2 {
     padding-right: 0;
+    }
+    
+    #hard-candy .planning {
+    padding: 13% 0;
     }
 
 }
