@@ -496,6 +496,10 @@ section.final {
     display: none;
 }
 
+.process {
+    padding-top: 3%;
+}
+
 /* Tablet Video */
 
 .video {
@@ -632,6 +636,51 @@ section.final {
 
 .fridgeold-10 {
     background-image: url(../img/fridge-old-10.png);
+}
+
+.humanframe-1 {
+    background-image: url(../img/humanize-frame-1.jpg);
+    background-color: #f4f4f4;
+}
+
+.humanframe-2 {
+    background-image: url(../img/humanize-frame-2.jpg);
+    background-color: #f4f4f4;
+}
+
+.humanframe-3 {
+    background-image: url(../img/humanize-frame-3.jpg);
+    background-color: #f4f4f4;
+}
+
+.humanframe-4 {
+    background-image: url(../img/humanize-frame-4.jpg);
+    background-color: #f4f4f4;
+}
+
+.humanframe-5 {
+    background-image: url(../img/humanize-frame-5.jpg);
+    background-color: #f4f4f4;
+}
+
+.humaninitial-1 {
+    background-image: url(../img/humanize-initial-1.jpg);
+    background-color: #f4f4f4;
+}
+
+.humaninitial-2 {
+    background-image: url(../img/humanize-initial-2.jpg);
+    background-color: #f4f4f4;
+}
+
+.humaninitial-3 {
+    background-image: url(../img/humanize-initial-3.jpg);
+    background-color: #f4f4f4;
+}
+
+.humaninitial-4 {
+    background-image: url(../img/humanize-initial-4.jpg);
+    background-color: #f4f4f4;
 }
 
 .user-scenario article {
@@ -1082,6 +1131,15 @@ svg line {
     display: block;
     background-color: #f8f8f8;
     padding: 3%;
+    margin-top: 5%;
+    }
+    
+    .two-copy {
+    padding: 4% 0;
+    }
+    
+    .architectureassolution {
+    padding-bottom: 13%;
     }
     
     .humanizing-sketches {
