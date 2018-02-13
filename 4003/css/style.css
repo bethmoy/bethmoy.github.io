@@ -2,11 +2,6 @@ body {
     background-color: #f8f8f8;
 }
 
-@font-face {
-    font-family: 'Canela-Light';
-    src: url('../fonts/canela-light.otf');
-}
-
 #fade-top {
     position: fixed;
     top: 0;
@@ -35,7 +30,7 @@ img {
 }
 
 h1, h6, p, a, ol {
-    font-family: 'Canela-Light';
+    font-family: Canela;
     font-weight: lighter;
 }
 
