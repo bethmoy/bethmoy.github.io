@@ -285,9 +285,6 @@
     .end {
         margin-bottom: 0;
     }
-    .start {
-        padding-top: 0;
-    }
     #about-text h2 {
         margin-bottom: -15px;
     }
@@ -670,6 +667,9 @@ body, header, #case-study-text, .line {
     /* Main Spacing */
     section, .projects, .text {
         margin: 50px 0;
+    }
+    .start {
+        padding-top: 0;
     }
     /* End of Main Spacing */
 }
