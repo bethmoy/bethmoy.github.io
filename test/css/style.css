@@ -39,7 +39,7 @@
     li p, span.chap, .project-link p {
         font-family: 'Chap-Light', sans-serif;
     }
-    span, a#home {
+    span, a#home, #hamburger li a {
         font-family: SilkSerif-ExtraLight, serif;
     }
     h4, p {
@@ -229,7 +229,6 @@
         border: none;
     }
     #hamburger li a {
-        font-family: "Silk Serif";
         border: none;
         font-size: 60px;
         line-height: 50%;
