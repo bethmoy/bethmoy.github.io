@@ -70,8 +70,8 @@
     }
     /** Typography: Font-Sizes & Line-Heights **/
     h1 {
-        font-size: 10.5vw;
-        line-height: 11.6vw;
+        font-size: 12vw;
+        line-height: 12.4vw;
     }
     h1 sup {
         font-size: 5vw;
@@ -277,7 +277,7 @@
     }
     /* Home */
     header {
-        padding: 125px 0 80px;
+        padding: 140px 0 60px;
     }
     section, .projects, .text {
         margin: 40px 0;
