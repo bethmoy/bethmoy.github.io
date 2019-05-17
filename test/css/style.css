@@ -405,7 +405,14 @@
     .text h3, .text p, .summary h4 {
         text-align: left;
     }
-    .text img {
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .text img, .video {
         width: 100vw;
         margin-left: -2.5rem;
     }
@@ -568,7 +575,7 @@ body, header, #case-study-text, .line {
     }
     /* End of Text Styles */
     /* Hidden */
-    .text img {
+    .text img, .video {
         width: 100%;
         margin-left: 0;
     }
