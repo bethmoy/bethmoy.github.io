@@ -1,0 +1,758 @@
+/* Main Styles */
+    /* Reset */
+    body, h1, h2, h3, h4, h5, p {
+        margin: 0;
+        padding: 0;
+    }
+    ul {
+        padding: 0;
+    }
+    li {
+        list-style: none; 
+    }
+    a {
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+    }
+    /* Fonts */
+    @font-face {
+        font-family: Chap-Light;
+        src: url(../webfonts/Chap_Light.woff);
+        font-weight: normal;
+        font-style: normal;
+    }
+    .SilkSerif-ExtraLight { 
+        font-family: SilkSerif-ExtraLight;
+        font-weight: normal;
+        font-style: normal;
+    }
+    /* Typography: Font-Families */
+    body {
+        background-color: #000;
+        color: #fff;
+        font-family: 'Chap-Light', sans-serif;
+        letter-spacing: .5px;
+        cursor: -webkit-image-set(
+            url(../assets/cursor.svg) 1x, url(../assets/cursor.svg) 2x) 25 25, auto;
+    }
+    li p, span.chap, .project-link p {
+        font-family: 'Chap-Light', sans-serif;
+    }
+    span, a#home, #hamburger li a {
+        font-family: SilkSerif-ExtraLight, serif;
+    }
+    h4, p {
+        font-family: 'IBM Plex Sans', sans-serif;
+    }
+    sup {
+        font-family: 'Roboto', sans-serif;
+    }
+    /* Typography: Font-Weights, Letter-Spacing & Styles */
+    body, h1, h2, h3, h5 {
+        font-weight: 100;
+    }
+    h4, p, sup {
+        font-weight: 400;
+    }
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        opacity: .7;
+        padding-bottom: 5px;
+    }
+    li p {
+        letter-spacing: .5px;
+    }
+    a, a:hover {
+        cursor: -webkit-image-set(
+        url(../assets/cursor-hover.svg) 1x, url(../assets/cursor-hover.svg) 2x) 25 25, auto;
+    }
+    /** Typography: Font-Sizes & Line-Heights **/
+    h1 {
+        font-size: 11.3vw;
+        line-height: 11.7vw;
+    }
+    h1 sup {
+        font-size: 5vw;
+        line-height: 5.8vw;
+    }
+    h1 a {
+        line-height: 7.5vw;
+    }
+    h2 {
+        font-size: 7.5vw;
+        line-height: 8.8vw;
+    }
+    h2 sup {
+        font-size: 3.8vw;
+        line-height: 4.1vw;
+    }
+    li, #intro p {
+        font-size: 14px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    .text p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    a#home {
+        font-size: 20px;
+    }
+    /* Borders */
+    a, li, .project-link p, .project-card {
+        border-bottom: solid 1px rgba(255,255,255,.5);
+    }
+/* End of Main Styles */
+
+/* Navigation */
+    /* Main Styles */
+    nav, .gradient-bg, .solid-box, .gr-box, #gradient-nav, .casestudy-gradient {
+        width: 100%;
+    }
+    nav {
+        position: fixed;
+        top: 0;
+        z-index: 9999;
+        padding-top: 35px;
+    }
+    .gradient-bg {
+        position: fixed;
+        z-index: 999;
+    }
+    .solid-box {
+        height: 45px;
+        background-color: #000;
+    }
+    .gr-box {
+        height: 115px;
+        background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(0,0,0,1));
+        
+    }
+    .right-nav a {
+        margin-left: 10px;
+    }
+    .inactive {
+        opacity: .5;
+    }
+    /* Mobile Nav */
+    /* Icon Animations */
+    .top-animate {
+        top: 13px !important;
+        background: #606060 !important;
+        -webkit-transform: rotate(45deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(45deg);
+    }
+    .mid-animate { 
+        opacity: 0; 
+    }
+    .bottom-animate {
+        top: 13px !important;
+        background: #606060 !important;
+        -webkit-transform: rotate(-225deg);
+        /* Chrome, Safari, Opera */
+        transform: rotate(-225deg);
+    }
+    /* Icon */
+    .top-menu {
+        top: 6px;
+        width: 30px;
+        height: 1px;
+        border-radius: 10px;
+        transition: 0.6s ease;
+        transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    }
+    .mid-menu {
+        top: 12px;
+        width: 30px;
+        height: 1px;
+        border-radius: 10px;
+    }
+    .bottom-menu {
+        top: 18px;
+        width: 30px;
+        height: 1px;
+        border-radius: 10px;
+        transition: 0.6s ease;
+        transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+    }
+    .menui {
+        background: #949494 !important;
+        transition: 0.6s ease;
+        transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+        margin-top: 15px;
+        position: absolute;
+    }
+    .icon {
+        z-index: 9999;
+        position: fixed;
+        display: block;
+        padding: 10px;
+        height: 37px;
+        width: 32px;
+        margin: 0px;
+        top: 20px;
+        right: 1.7rem;
+    }
+    #navigation {
+        display: none;
+    }
+    /* Active State */
+    #hamburger {
+        font-family: inherit;
+        top: 0;
+        left: 0;
+        z-index: 800;
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,0.3);
+    }
+    #hamburger .mobile-nav {
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,.9);
+        display: flex;
+        align-items: center;
+    }
+    #hamburger ul {
+        width: 100%;
+        padding: 0 3rem;
+    }
+    #hamburger li {
+        display: block;
+        border: none;
+    }
+    #hamburger li a {
+        border: none;
+        font-size: 60px;
+        line-height: 50%;
+        -webkit-transition: .5s cubic-bezier(.33, .66, .66, 1);
+        transition: .5s cubic-bezier(.33, .66, .66, 1);
+    }
+    /* End of Mobile Nav */
+/* End of Navigation */
+
+/* Hire Me */
+    #hiremebox {
+        position: absolute;
+        height: 100vh;
+        top: 0;
+    }
+    #hireme {
+        position: fixed;
+        z-index: 9999;
+        background-image: url(../assets/hire_me.png);
+        background-size: cover;
+        background-position: center;
+        /* Subject to change on resizing */
+        right: -60px;
+        height: 120px;
+        width: 120px;
+    }
+/* End of Hire Me */
+
+/* Hidden */
+    .side-nav, .projects .list, #hireme {
+        display: none;
+    }
+    a#home, .right-nav a, .border-none, .list-border, #hireme , .icon, a.projects {
+        border: none;
+    }
+/* End of Hidden */
+
+/* Main Spacing */
+    /* Reset */
+    .end {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+    .space {
+        padding: 0 1rem;
+    }
+    /* Home */
+    header {
+        padding: 140px 0 60px;
+    }
+    section, .projects, .text {
+        margin: 40px 0;
+    }
+    .end {
+        margin-bottom: 0;
+    }
+    #about-text h2 {
+        margin-bottom: -15px;
+    }
+    .project-card {
+        padding-bottom: 40px;
+    }
+    li {
+        padding: 40px 0 25px;  
+    }
+    .projects h2 {
+        padding-top: 40px;
+    }
+    .project-link, .text h3, .text p, .text img {
+        padding-top: 25px;
+    }
+    .arrow{
+        padding: 3px 8px 0;
+    }
+    /* About */
+    #about-text ul {
+        margin: 0;
+    }
+    #intro p {
+        letter-spacing: 1px;
+    }
+    /* Case Study */
+    .summary {
+        padding-left: 25px;
+        margin: 60px 0 40px;
+    }
+    #case-study-text {
+        margin-top: -150px;
+    }
+    #seemore {
+        margin: 150px 0 100px;
+    }
+    .thumb {
+        padding: 40px 0 35px;
+    }
+    #seemore .project-link {
+        padding: 15px 0 0;
+    }
+    /* Footer */
+    footer {
+        padding: 80px 0 100px;
+    }
+    footer h2, #about-text h2, #intro h2 {
+        padding-bottom: 40px;
+    }
+    footer h4 {
+        padding-bottom: 25px;
+    }
+    footer .list {
+        padding: 20px;
+    }
+    a.link {
+        margin-right: 3px;
+    }
+    footer li {
+        padding-top: 0px;
+    }
+    .typeset {
+        padding-top: 25px;
+    }
+    .typeset img {
+        float: left;
+        padding: 6px 10px 50px 0;
+    }
+/* End of Spacing */
+
+/* Home Page */
+    .project-link p {
+        float: left;
+    }
+/* End of Home Page */
+
+/* Case Study Page */
+    /* Header */
+    .case-study {
+        /* Subject to change on resizing */
+        width: 100%;
+        background-size: 150%;
+        background-position: center top;
+        height: 80vw;
+        border-bottom: 2px solid #000000;
+        box-sizing: border-box;
+        background-attachment: fixed;
+        margin: 0;
+    }
+    .casestudy-gradient {
+        transform: rotate(180deg);
+    }
+    .casestudy-gradient .gr-box {
+        height: 100px;
+    }
+    /* Sticky Nav */
+    #gradient-nav {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0;
+        z-index: 98;
+    }
+    /* Header Images */
+    #ttyir {
+        background-image: url(../assets/ttyir/ttyir_header.jpg);
+}
+    #wos {
+        background-image: url(../assets/img_test/wos_test.jpg);
+    }
+    /* Text */
+    .summary {
+        border-left: solid .5px rgba(255,255,255,.5);
+    }
+    #case-study-text h2 {
+        z-index: 99;
+    }
+    .text h3, .text p, .summary h4 {
+        text-align: left;
+    }
+/* End of Case Study Page */
+
+/* Opening Animations */
+/* fadein */
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-webkit-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-ms-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+@-o-keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+/* movein */
+@keyframes movein {
+    0% { margin-top: 25px; }
+    100% { margin-top: 0; }
+}
+@-moz-keyframes movein {
+    0% { margin-top: 25px; }
+    100% { margin-top: 0; }
+}
+@-webkit-keyframes movein {
+    0% { margin-top: 25px; }
+    100% { margin-top: 0; }
+}
+@-ms-keyframes movein {
+    0% { margin-top: 25px; }
+    100% { margin-top: 0; }
+}
+@-o-keyframes movein {
+    0% { margin-top: 25px; }
+    100% { margin-top: 0; }
+}
+/* casestudy */
+@keyframes casestudy {
+    0% { margin-top: -125px; }
+    100% { margin-top: -150px; }
+}
+@-moz-keyframes casestudy {
+    0% { margin-top: -125px; }
+    100% { margin-top: -150px; }
+}
+@-webkit-keyframes casestudy {
+    0% { margin-top: -125px; }
+    100% { margin-top: -150px; }
+}
+@-ms-keyframes casestudy {
+    0% { margin-top: -125px; }
+    100% { margin-top: -150px; }
+}
+@-o-keyframes casestudy {
+    0% { margin-top: -125px; }
+    100% { margin-top: -150px; }
+}
+/* line */
+@keyframes line {
+    0% { width: 0; }
+    40% { width: 0; }
+    100% { width: 100%; }
+}
+@-moz-keyframes line {
+    0% { width: 0; }
+    40% { width: 0; }
+    100% { width: 100%; }
+}
+@-webkit-keyframes line {
+    0% { width: 0; }
+    40% { width: 0; }
+    100% { width: 100%; }
+}
+@-ms-keyframes line {
+    0% { width: 0; }
+    40% { width: 0; }
+    100% { width: 100%; }
+}
+@-o-keyframes line {
+    0% { width: 0; }
+    40% { width: 0; }
+    100% { width: 100%; }
+}
+/* Timing */
+body {
+    -webkit-animation: fadein 1.7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 1.7s; /* Firefox < 16 */
+    -ms-animation: fadein 1.7s; /* Internet Explorer */
+    -o-animation: fadein 1.7s; /* Opera < 12.1 */
+    animation: fadein 1.7s;
+}
+header {
+    -webkit-animation: movein .7s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: movein .7s; /* Firefox < 16 */
+    -ms-animation: movein .7s; /* Internet Explorer */
+    -o-animation: movein .7s; /* Opera < 12.1 */
+    animation: movein .7s;
+}
+#case-study-text {
+    -webkit-animation: casestudy .8s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: casestudy .8s; /* Firefox < 16 */
+    -ms-animation: casestudy .8s; /* Internet Explorer */
+    -o-animation: casestudy .8s; /* Opera < 12.1 */
+    animation: casestudy .8s;
+}
+.line {
+    border-top: solid 1px rgba(255,255,255,.5);
+    height: 0;
+    margin: 15px 0;
+    padding: 0;
+    animation: line 1s;
+}
+body, header, #case-study-text, .line {
+    animation-timing-function: ease-in-out;
+}
+/* End of Opening Animations */
+
+/* Media Queries */
+/* Tablet-4K Styles | 48em+ */
+@media only screen and (min-width: 48em) {
+    /* Text Sizes */
+    h1 {
+        font-size: 5.9vw;
+        line-height: 6.8vw;
+    }
+    h1 sup {
+        font-size: 2.8vw;
+        line-height: 3.2vw;
+    }
+    h1 a {
+        line-height: 4.8vw;
+    }
+    h2 {
+        font-size: 4vw;
+        line-height: 4.8vw;
+    }
+    h2 sup {
+        font-size: 2.5vw;
+        line-height: 2.9vw;
+    }
+    h3 {
+        font-size: 12px;
+    }
+    /* End of Text Styles */
+    /* Hidden */
+    .side-nav, .projects .list, #hireme {
+        display: block;
+    }
+    .icon, .project-img {
+        display: none;
+    }
+    .list-border {
+        border-bottom: solid 1px rgba(255,255,255,.5);
+    }
+    .projects .project-card {
+        border: none;
+    }
+    .stay-fixed {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 80px;
+    }
+    /* End of Hidden */
+    /* Main Spacing */
+    .projects {
+        margin: -10vw 0;
+    }
+    /* End of Main Spacing */
+    /* Home Page */
+    .projects {
+        height: 55vw;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 55%;
+        transition: all .4s ease-in-out;
+    }
+    .projects:hover {
+        transform: scale(1.02); -webkit-transform: scale(1.02);
+        will-change: transform;
+    }
+    /* Project Images */
+    #project-1 {
+        background-image: url(../assets/ttyir/ttyir_thumb.jpg);
+    }
+    #project-2 {
+        background-image: url(../assets/gt/gt_thumb.jpg);
+    }
+    #project-3 {
+        background-image: url(../assets/wos/wos_thumb.jpg);
+    }
+    #project-4 {
+        background-image: url(../assets/vv/vv_thumb.jpg);
+    }
+    /* End of Home Page */
+    /* About Page */
+    #about-text h2 {
+        text-align: right;
+    }
+    /* End of About Page */
+    /* Case Study Page */
+    .casestudy-gradient .gr-box {
+        height: 150px;
+    }
+    .case-study {
+        height: 35vw;
+        background-position: center -12vw;
+        background-size: cover;
+    }
+    /* End of Case Study Page */
+    /* Main Spacing */
+    #about-text h2, #intro h2 {
+        padding-bottom: 0;
+    }
+    header#landing {
+        padding: 18vw 0 8vw;
+    }
+    /* End of Main Spacing */
+}
+/* End of Tablet-4K Styles | 48em+ */
+
+/* Desktop_Small-4K Styles | 62em+ */
+@media only screen and (min-width: 62em) {
+    /* Text Sizes */
+    h1 {
+        font-size: 5.5vw;
+        line-height: 6.3vw;
+    }
+    h1 sup {
+        font-size: 2.8vw;
+        line-height: 3.2vw;
+    }
+    h1 a {
+        line-height: 4.5vw;
+    }
+    h2 {
+        font-size: 3.7vw;
+        line-height: 4.4vw;
+    }
+    h2 sup {
+        font-size: 1.9vw;
+        line-height: 2.2vw;
+    }
+    .project-card h2 {
+        font-size: 2.8vw;
+        line-height: 3.5vw;
+    }
+    .project-card h2 sup {
+        font-size: 1.4vw;
+        line-height: 1.75;
+    }
+    h4 {
+        font-size: 1.5vw;
+        line-height: 2vw;
+    }
+    /* End of Text Sizes */
+    /* Home Page */
+    .projects {
+        height: 38.5vw;
+        background-size: 55%;
+    }
+    /* End of Home Page*/
+    /* Main Spacing */
+    section, .projects, .text {
+        margin: 50px 0;
+    }
+    .start {
+        padding-top: 0;
+    }
+    /* End of Main Spacing */
+}
+/* End of Desktop_Small-4K Styles | 62em+ */
+
+/* Desktop_Large-4K Styles | 75em+ */
+@media only screen and (min-width: 75em) {
+    /* Text Sizes */
+    h1 {
+        font-size: 5.8vw;
+        line-height: 6.2vw;
+    }
+    h1 sup {
+        font-size: 2.9vw;
+        line-height: 3.1vw;
+    }
+    h1 a {
+        line-height: 5vw;
+    }
+    h3 {
+        font-size: .85vw;
+        letter-spacing: .1vw;
+    }
+    li p, #intro p, a.link, .project-link p, .typeset p {
+        font-size: 1vw;
+        letter-spacing: .03vw;
+    }
+    .text p {
+        font-size: 1.1vw;
+        line-height: 1.5vw;
+    }
+    /* End of Text Sizes */
+    /* Navigation */
+    nav {
+        padding-top: 2.4vw;
+    }
+    a#home {
+        font-size: 1.4vw;
+    }
+    .side-nav a {
+        font-size: 1.1vw;
+    }
+    .right-nav a {
+        margin-left: .7vw;
+    }
+    .solid-box {
+        height: 3vw;
+    }
+    .gr-box {
+        height: 8vw;
+    }
+    /* End of Navigation */
+    #hireme {
+        height: 9vw;
+        width: 9vw;
+        right: -4.5vw;
+    }
+    /* Main Spacing */
+    header#landing {
+        padding: 13vw 0 3vw;
+    }
+    header {
+        padding: 12.5vw 0 8vw;
+    }
+    section.projects  {
+        padding: 5vw 0;
+    }
+    footer {
+        padding: 5vw 0 9vw;
+    }
+    .stay-fixed {
+        top: 8vw;
+    }
+    /* End of Main Spacing */
+}
+/* End of Desktop_Large-4K Styles | 75em+ */
