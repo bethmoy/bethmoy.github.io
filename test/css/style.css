@@ -404,6 +404,10 @@
     .text h3, .text p, .summary h4 {
         text-align: left;
     }
+    .text img {
+        width: 100vw;
+        margin-left: -2.5rem;
+    }
 /* End of Case Study Page */
 
 /* Opening Animations */
@@ -558,6 +562,10 @@ body, header, #case-study-text, .line {
     }
     /* End of Text Styles */
     /* Hidden */
+    .text img {
+        width: 100%;
+        margin-left: 0;
+    }
     .side-nav, .projects .list, #hireme {
         display: block;
     }
