@@ -413,6 +413,10 @@
         width: 100vw;
         margin-left: -2.5rem;
     }
+#play img {
+    margin-left: -1.5rem;
+    width: 100vw;
+}
     .video {
         position: relative;
         padding: 56.25% 0 0 0;
@@ -754,11 +758,14 @@ body, header, #case-study-text, .line {
         line-height: 6.2vw;
     }
     h1 sup {
-        font-size: 2.9vw;
-        line-height: 3.1vw;
+        font-size: 2.7vw;
+        line-height: 0;
     }
     h1 a {
-        line-height: 5vw;
+        line-height: 4.5vw;
+    }
+    h2 a {
+        line-height: 3vw;
     }
     h3 {
         font-size: .85vw;
