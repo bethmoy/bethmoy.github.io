@@ -318,9 +318,6 @@
     #case-study-text {
         margin-top: -150px;
     }
-    #seemore {
-        margin: 150px 0 100px;
-    }
     .thumb {
         padding: 40px 0 35px;
     }
@@ -644,11 +641,29 @@ body, header, #case-study-text, .line {
     }
     /* End of Case Study Page */
     /* Main Spacing */
-    #about-text h2, #intro h2 {
-        padding-bottom: 0;
+    header#landing, header {
+        padding-top: 18vw;
+    }
+    header, section {
+        padding-bottom: 5vw;
     }
     header#landing {
-        padding: 18vw 0 8vw;
+        padding-bottom: 10vw;
+    }
+    section {
+        padding-top: 5vw;
+    }
+    footer {
+        padding-top: 10vw;
+    }
+    #case-study-text {
+        padding-top: 0;
+    }
+    footer {
+        padding-bottom: 14vw;
+    }
+    .start {
+        padding-top: 0;
     }
     .end {
         margin-bottom: 0;
@@ -696,11 +711,27 @@ body, header, #case-study-text, .line {
     .projects {
         height: 38.5vw;
         background-size: 55%;
+        margin: 0;
     }
     /* End of Home Page*/
     /* Main Spacing */
-    section, .projects, .text {
-        margin: 50px 0;
+    .text {
+        margin: 5vw 0;
+    }
+    header#landing, header {
+        padding-top: 12.75vw;
+    }
+    header#landing, header, section {
+        padding-bottom: 5vw;
+    }
+    section, footer {
+        padding-top: 5vw;
+    }
+    #case-study-text {
+        padding-top: 0;
+    }
+    footer {
+        padding-bottom: 12.75vw;
     }
     .start {
         padding-top: 0;
@@ -765,20 +796,23 @@ body, header, #case-study-text, .line {
         right: -4.5vw;
     }
     /* Main Spacing */
-    header#landing {
-        padding: 13vw 0 3vw;
+    .stay-fixed {
+        top: 8vw;
     }
-    header {
-        padding: 12.5vw 0 8vw;
+    header#landing, header {
+        padding-top: 13vw;
     }
-    section.projects  {
-        padding: 5vw 0;
+    header#landing, header, section {
+        padding-bottom: 7vw;
+    }
+    section, footer {
+        padding-top: 7vw;
+    }
+    footer {
+        padding-bottom: 13vw;
     }
     footer {
         padding: 5vw 0 9vw;
-    }
-    .stay-fixed {
-        top: 8vw;
     }
     .end {
         margin-bottom: 0;
