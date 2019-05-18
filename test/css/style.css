@@ -639,8 +639,8 @@ body, header, #case-study-text, .line {
     }
     .case-study {
         height: 35vw;
-        background-position: center -12vw;
-        background-size: cover;
+        background-position: center -3vw;
+        background-size: 100%;
     }
     /* End of Case Study Page */
     /* Main Spacing */
@@ -649,6 +649,9 @@ body, header, #case-study-text, .line {
     }
     header#landing {
         padding: 18vw 0 8vw;
+    }
+    .end {
+        margin-bottom: 0;
     }
     /* End of Main Spacing */
 }
@@ -701,6 +704,9 @@ body, header, #case-study-text, .line {
     }
     .start {
         padding-top: 0;
+    }
+    .end {
+        margin-bottom: 0;
     }
     /* End of Main Spacing */
 }
@@ -773,6 +779,9 @@ body, header, #case-study-text, .line {
     }
     .stay-fixed {
         top: 8vw;
+    }
+    .end {
+        margin-bottom: 0;
     }
     /* End of Main Spacing */
 }
