@@ -390,7 +390,7 @@
         background-image: url(../assets/ttyir/ttyir_header.jpg);
 }
     #wos {
-        background-image: url(../assets/img_test/wos_test.jpg);
+        background-image: url(../assets/wos/wos_header.jpg);
     }
     /* Text */
     .summary {
@@ -636,8 +636,11 @@ body, header, #case-study-text, .line {
     }
     .case-study {
         height: 35vw;
-        background-position: center -3vw;
+        background-position: center -12vw;
         background-size: 100%;
+    }
+    #ttyir {
+        background-position: center -3vw;
     }
     /* End of Case Study Page */
     /* Main Spacing */
