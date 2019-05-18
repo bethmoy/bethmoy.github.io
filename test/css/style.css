@@ -413,10 +413,10 @@
         width: 100vw;
         margin-left: -2.5rem;
     }
-#play img {
-    margin-left: -1.5rem;
-    width: 100vw;
-}
+    #play img {
+        margin-left: -1.5rem;
+        width: 100vw;
+    }
     .video {
         position: relative;
         padding: 56.25% 0 0 0;
@@ -576,7 +576,7 @@ body, header, #case-study-text, .line {
     }
     /* End of Text Styles */
     /* Hidden */
-    .text img, .video {
+    .text img, .video, #play img {
         width: 100%;
         margin-left: 0;
     }
