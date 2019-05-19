@@ -143,12 +143,12 @@ Ah yes. Taking that you have made it this far, I have an idea that you're curiou
     <div class="col-xs-12 col-sm-offset-1 col-sm-6 col-md-offset-1 col-md-8">
         <div class="space row center-md">
         <div class="summary col-lg-9">
-            <h4>A collaborative website that dissects John Berger's theories in his television series and book, <i>Ways of Seeing</i>, through an interactive lens and set of mini interactions.</h4>
+            <h4>A collaborative website that dissects John Berger's theories in his television series and book, <i>Ways of Seeing</i>, through an interactive lens.</h4>
         </div>
         <div class="text col-lg-9">
             <h3>How Do We See</h3>
             <p><i>How do people interpret, or rather, "see" things so differently?</i></p>
-            <p>In <a href="https://www.youtube.com/watch?v=0pDE4VX_9Kk" target="_blank"><i>Ways of Seeing</i></a>, John Berger answers this question by outlining how we see and why we should be more critical when questioning the nature of our seeing. Berger adapts the way he teaches his theories specific to the medium of choice &mdash; as through his book and television series. With advancements in technology and the ability to see visuals from a broader range, an interactive <i>Ways of Seeing</i> is needed. </p>
+            <p>In <a href="https://www.youtube.com/watch?v=0pDE4VX_9Kk" target="_blank"><i>Ways of Seeing</i></a>, John Berger answers this question by outlining how we see and the reason why we should be more critical when questioning the nature of our seeing. Berger adapts the way he teaches his theories specific to the medium of choice &mdash; as through his book and television series. With advancements in technology and the ability to see visuals from a broader range, an interactive <i>Ways of Seeing</i> is needed. </p>
         </div>
         <div class="text">
             <img src="assets/wos/wos_intro.jpg" />
@@ -159,8 +159,8 @@ Ah yes. Taking that you have made it this far, I have an idea that you're curiou
         <div class="text col-lg-9">
             <h3>Adjusting to the Medium</h3>
             <p><i>How can Berger's theories be translated into an interactive website?</i></p>
-            <p>The episodes use video and audio effectively to demonstrate how the medium shapes our way of seeing &mdash; like in the sequencing section of the first episode. The book has 7 chapters, but 4 are a mixture of both text and image, and 3 have just images.</p>
-            <p>Since the medium influences perception, the website should reflect his theories by utilizing common interactive actions and tools that should be used to influence the user’s way of seeing. The collaborative aspect will allow people to understand the infinite variability of perception.</p>
+            <p>The episodes use video and audio effectively to demonstrate how the medium shapes our way of seeing. The book has 7 chapters, but 4 are a mixture of both text and image, and 3 have just images.</p>
+            <p>Since the medium influences our perception, the website should reflect his theories by utilizing common interactive actions and tools that should be used to influence the user’s way of seeing. The collaborative aspect will allow people to understand the infinite variability of perception.</p>
         </div>
         <div class="text col-lg-9">
             <h3>How It Works</h3>
@@ -197,9 +197,17 @@ Ah yes. Taking that you have made it this far, I have an idea that you're curiou
             <h3>3. Reproduction</h3>
             <p>The camera reproduces it, making it available in any size, anywhere, and for any purpose.</p>
         </div>
+        <div class="text">
+            <img src="assets/wos/wos_content_1.jpg" />
+        </div>
         <div class="text col-lg-9">
             <h3>4. Crop</h3>
             <p></p>
+        </div>
+        <div class="text">
+            <img src="assets/wos/wos_crop_1.jpg" />
+            <img src="assets/wos/wos_crop_2.jpg" />
+            <img src="assets/wos/wos_crop_3.jpg" />
         </div>
         <div class="text col-lg-9">
             <h3>5. Audio &amp; Text</h3>
@@ -296,7 +304,7 @@ $(window).on('scroll', function () {
   
   var scrollTop = $(this).scrollTop(),
       height = header.outerHeight(),
-      offset = height / .27,
+      offset = height / .14,
       calc = 1 - (scrollTop - offset + range) / range;
 
   header.css({ 'opacity': calc });
