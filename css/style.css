@@ -418,9 +418,6 @@
         width: 100vw;
         margin-left: -2.5rem;
     }
-    .text img.small {
-        width: 80%;
-    }
     #play img {
         margin-left: -1.5rem;
         width: 100vw;
@@ -665,6 +662,9 @@ body, header, #case-study-text, .line {
     }
     #ttyir {
         background-position: center -3vw;
+    }
+    .text img.small {
+        width: 80%;
     }
     /* End of Case Study Page */
     /* Main Spacing */
