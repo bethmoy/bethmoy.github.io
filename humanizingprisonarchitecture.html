@@ -270,7 +270,7 @@ $(window).on('scroll', function () {
   
   var scrollTop = $(this).scrollTop(),
       height = header.outerHeight(),
-      offset = height / .14,
+      offset = height / .27,
       calc = 1 - (scrollTop - offset + range) / range;
 
   header.css({ 'opacity': calc });
